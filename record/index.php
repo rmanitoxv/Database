@@ -82,7 +82,8 @@
                 else{   ?>
                     <a href="registration.php">Input Vaccination Details</a>
                         <?php  }?>
-                    <h1> <a href="logout.php">Logout</a>
+                <h1> <a href="password.php">Change Password</a></h1>
+                <h1> <a href="logout.php">Logout</a></h1>
             </body>
         </hmtl>
 <?php
