@@ -3,20 +3,52 @@
     if(isset($_SESSION['userID']) && isset($_SESSION['username'])) {
 ?>
         <!DOCTYPE html>
-        <hmtl>
+        <html>
             <head>
-                <title>
-                    Welcome
-                </title>
+                <style>
+                    body {
+                        font-size: 0px;
+                        margin: 0px;
+                    }
+                </style>
             </head>
+            <title>
+                Admin
+            </title>
             <body>
-                <h1> Welcome <?php echo $_SESSION['username'] ?>!! </h1>
-                <h1> <a href="newuser.php">Add New User</a>
-                <h1> <a href="validatestudents.php">Validate Students Registrations?</a>
-                <h1> <a href="validatestaff.php">Validate Staff Registrations?</a>
-                <h1> <a href="logout.php">Logout</a>
+
+                <table border=0>
+                <tr><td width=85%>
+                <p>
+                <img src="img/admin_logo.png" width=55%>
+                </a></p>
+                </td>
+
+                <td>
+                <p><a href="logout.php">
+                <center>
+                <img src="img/admin_logoutbutton.png" alt="Logout" width=70%>
+                </a></p>
+                </td>
+                </tr>
+                </table>
+
+                <center>
+                <p><a href="newuser.php">
+                <img src="img/admin_newuser.png" alt="New User" width=100% height=28%>
+                </a></p>
+
+                <p><a href="validatestudents.php">
+                <img src="img/admin_student.png" alt="Student" width=100% height=28%>
+                </a></p>
+
+                <p><a href="validatestaff.php">
+                <img src="img/admin_staff.png" alt="Staff" width=100% height=28%>
+                </a></p>
+                </center>
+
             </body>
-        </hmtl>
+        </html>
 <?php
     }
     else {

@@ -44,8 +44,11 @@ if(mysqli_num_rows($result) == 1) {
             exit();}
     }
     else{
-        header("Location: form.php?error=Incorrect User Name or Password");
+        header("Location: form.php?error=Incorrect Password");
     }
+}
+else{
+    header("Location: form.php?error=Incorrect Username");
 }
 
 ?>
